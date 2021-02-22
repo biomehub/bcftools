@@ -9,7 +9,7 @@ ENV VERSION=1.11
 RUN apk add build-base py-pip jpeg-dev zlib-dev gcc g++ make perl bzip2-dev xz-dev
 
 # Download & install
- RUN wget https://github.com/bcftools/bcftools/releases/download/$VERSION/bcftools-$VERSION.tar.bz2 \
+ RUN wget https://github.com/samtools/bcftools/releases/download/$VERSION/bcftools-$VERSION.tar.bz2 \
   && tar -xvjf bcftools-$VERSION.tar.bz2 \
   && cd bcftools-$VERSION \
   && ./configure --without-curses \
